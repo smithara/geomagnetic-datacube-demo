@@ -1,0 +1,14 @@
+channels:
+  - conda-forge
+dependencies:
+  # Core tools
+  - dask
+  - pooch
+  - xarray
+  # Visualisation
+  - datashader
+  - geoviews
+  - holoviews
+  - hvplot
+  - pip:
+    - chaosmagpy
