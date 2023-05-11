@@ -1,14 +1,26 @@
 channels:
   - conda-forge
 dependencies:
-  # Core tools
+  # Core
+  - ipykernel
+  - ipywidgets
+  - pip
+  - python=3.10
+  # Data tools
   - dask
+  - intake
+  - intake-xarray
   - pooch
   - xarray
+  - zarr
   # Visualisation
   - datashader
   - geoviews
   - holoviews
   - hvplot
+  - panel
+  - pyvista
+  - trame
+  # Domain-specific
   - pip:
     - chaosmagpy

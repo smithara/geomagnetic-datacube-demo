@@ -1,0 +1,19 @@
+sources:
+  datacube_local_A:
+    description: Testing geomagnetic datacubes
+    driver: zarr
+    args:
+      urlpath: '{{ CATALOG_DIR }}/datacube_test_SwA.zarr'
+    metadata:
+      plots:
+        custom_quicklook:
+          kind: scatter
+          x: "Longitude"
+          y: "Latitude"
+          c: "B_NEC"
+          by: "NEC"
+          subplots: True
+          datashade: True
+          rasterize: True
+          width: 800
+          height: 600
