@@ -21,6 +21,8 @@ dependencies:
   - panel
   - pyvista
   - trame
+  # Build
+  - jupyter-book
   # Domain-specific
   - pip:
     - chaosmagpy

@@ -1,9 +1,9 @@
 sources:
-  datacube_local_A:
+  datacube_local_A_netcdf:
     description: Testing geomagnetic datacubes
-    driver: zarr
+    driver: netcdf
     args:
-      urlpath: '{{ CATALOG_DIR }}/datacube_test_SwA.zarr'
+      urlpath: '{{ CATALOG_DIR }}/data/SwA_20140501-20190501_proc1_shrunk.nc'
     metadata:
       plots:
         custom_quicklook:
@@ -17,3 +17,8 @@ sources:
           rasterize: True
           width: 800
           height: 600
+  datacube_local_A_zarr:
+    description: Testing geomagnetic datacubes
+    driver: zarr
+    args:
+      urlpath: '{{ CATALOG_DIR }}/data/datacube_test_SwA.zarr'
